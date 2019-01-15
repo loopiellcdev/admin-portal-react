@@ -28,11 +28,9 @@ const Sidebar = ({ ...props }) => {
         if (prop.redirect) return null;
         var activePro = " ";
         var listItemClasses;
-
         listItemClasses = classNames({
           [" " + classes[color]]: activeRoute(prop.path)
         });
-          
         const whiteFontClasses = classNames({
           [" " + classes.whiteFont]: activeRoute(prop.path)
         });
@@ -64,7 +62,7 @@ const Sidebar = ({ ...props }) => {
   );
   var brand = (
     <div className={classes.logo}>
-      <a href="https://www.creative-tim.com" className={classes.logoLink}>
+      <a href="https://www.loopie.us/" className={classes.logoLink}>
         <div className={classes.logoImage}>
           <img src={logo} alt="logo" className={classes.img} />
         </div>
