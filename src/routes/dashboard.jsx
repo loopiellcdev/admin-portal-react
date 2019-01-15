@@ -27,31 +27,65 @@ const dashboardRoutes = [
   },
   {
     path: "/user",
-    sidebarName: "User Profile",
+    sidebarName: "Users",
+    navbarName: "Profile",
+    icon: "people",
+    component: UserProfile
+  },
+
+  {
+    path: "/customer",
+    sidebarName: "Customers",
     navbarName: "Profile",
     icon: Person,
     component: UserProfile
   },
+
   {
-    path: "/table",
-    sidebarName: "Table List",
+    path: "/washer",
+    sidebarName: "Washers",
+    navbarName: "Profile",
+    icon: "local_laundry_service",
+    component: UserProfile
+  },
+
+  {
+    path: "/driver",
+    sidebarName: "Drivers",
+    navbarName: "Profile",
+    icon: "airport_shuttle",
+    component: UserProfile
+  },
+
+  {
+    path: "/order",
+    sidebarName: "Orders",
     navbarName: "Table List",
     icon: "content_paste",
     component: TableList
   },
+
   {
-    path: "/typography",
-    sidebarName: "Typography",
+    path: "/load",
+    sidebarName: "Loads",
+    navbarName: "Table List",
+    icon: "all_inbox",
+    component: TableList
+  },
+
+  {
+    path: "/payment",
+    sidebarName: "Payment",
     navbarName: "Typography",
-    icon: LibraryBooks,
+    icon: "account_balance",
     component: Typography
   },
   {
-    path: "/icons",
-    sidebarName: "Icons",
+    path: "/statistics",
+    sidebarName: "Statistics",
     navbarName: "Icons",
-    icon: BubbleChart,
-    component: Icons
+    icon: "bar_chart",
+    component: DashboardPage
   },
   {
     path: "/maps",
@@ -61,19 +95,13 @@ const dashboardRoutes = [
     component: Maps
   },
   {
-    path: "/notifications",
-    sidebarName: "Notifications",
+    path: "/settings",
+    sidebarName: "Settings",
     navbarName: "Notifications",
-    icon: Notifications,
+    icon: "settings",
     component: NotificationsPage
   },
-  {
-    path: "/upgrade-to-pro",
-    sidebarName: "Upgrade To PRO",
-    navbarName: "Upgrade To PRO",
-    icon: Unarchive,
-    component: UpgradeToPro
-  },
+
   { redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect" }
 ];
 
