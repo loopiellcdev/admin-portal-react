@@ -14,8 +14,15 @@ import TableList from "views/TableList/TableList.jsx";
 import Typography from "views/Typography/Typography.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import Maps from "views/Maps/Maps.jsx";
-import NotificationsPage from "views/Notifications/Notifications.jsx";
-import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.jsx";
+import Users from "views/Users/Users.jsx";
+import Customers from "views/Customers/Customers.jsx";
+import Washers from "views/Washers/Washers.jsx";
+import Drivers from "views/Drivers/Drivers.jsx";
+import Orders from "views/Orders/Orders.jsx";
+import Loads from "views/Loads/Loads.jsx";
+import Payment from "views/Payment/Payment.jsx";
+import Statistics from "views/Statistics/Statistics.jsx";
+import Settings from "views/Settings/Settings.jsx";
 
 const dashboardRoutes = [
   {
@@ -26,11 +33,11 @@ const dashboardRoutes = [
     component: DashboardPage
   },
   {
-    path: "/user",
+    path: "/users",
     sidebarName: "Users",
-    navbarName: "Profile",
+    navbarName: "Users",
     icon: "people",
-    component: UserProfile
+    component: Users
   },
 
   {
@@ -38,7 +45,7 @@ const dashboardRoutes = [
     sidebarName: "Customers",
     navbarName: "Profile",
     icon: Person,
-    component: UserProfile
+    component: Customers
   },
 
   {
@@ -46,7 +53,7 @@ const dashboardRoutes = [
     sidebarName: "Washers",
     navbarName: "Profile",
     icon: "local_laundry_service",
-    component: UserProfile
+    component: Washers
   },
 
   {
@@ -54,7 +61,7 @@ const dashboardRoutes = [
     sidebarName: "Drivers",
     navbarName: "Profile",
     icon: "airport_shuttle",
-    component: UserProfile
+    component: Drivers
   },
 
   {
@@ -62,7 +69,7 @@ const dashboardRoutes = [
     sidebarName: "Orders",
     navbarName: "Table List",
     icon: "content_paste",
-    component: TableList
+    component: Orders
   },
 
   {
@@ -70,7 +77,7 @@ const dashboardRoutes = [
     sidebarName: "Loads",
     navbarName: "Table List",
     icon: "all_inbox",
-    component: TableList
+    component: Loads
   },
 
   {
@@ -78,14 +85,14 @@ const dashboardRoutes = [
     sidebarName: "Payment",
     navbarName: "Typography",
     icon: "account_balance",
-    component: Typography
+    component: Payment
   },
   {
     path: "/statistics",
     sidebarName: "Statistics",
     navbarName: "Icons",
     icon: "bar_chart",
-    component: DashboardPage
+    component: Statistics
   },
   {
     path: "/maps",
@@ -99,7 +106,7 @@ const dashboardRoutes = [
     sidebarName: "Settings",
     navbarName: "Notifications",
     icon: "settings",
-    component: NotificationsPage
+    component: Settings
   },
 
   { redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect" }
