@@ -1,7 +1,7 @@
 {
   "name": "admin-portal-frontend",
   "version": "1.5.0",
-  "description": "Material Dashboard React. Coded by Creative Tim",
+  "description": "The react frontend for the LoopieLLC administrative portal",
   "private": false,
   "main": "dist/index.js",
   "dependencies": {
