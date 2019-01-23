@@ -14,6 +14,7 @@ import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import Table from "components/Table/Table.jsx";
 import avatar from "assets/img/faces/marc.jpg";
+import ReactVirtualizedTable from "components/ReactVirtualizedTable/ReactVirtualizedTable.jsx";
 
 const styles = {
   cardCategoryWhite: {
@@ -46,57 +47,20 @@ function UserProfile(props) {
             <p className={classes.cardCategoryWhite}>
               Here's a list of all washers.
             </p>
+            <ReactVirtualizedTable/>
           </CardHeader>
-          <CardBody style={{maxHeight: 250, overflow: 'auto'}}>
-            <Table
-              tableHeaderColor="warning"
-              tableHead={["ID", "Name", "Salary", "Country"]}
-              tableData={[
-                ["1", "Dakota Rice", "$36,738", "Niger"],
-                ["2", "Minerva Hooper", "$23,789", "Curaçao"],
-                ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
-                ["4", "Dakota Rice", "$36,738", "Niger"],
-                ["5", "Minerva Hooper", "$23,789", "Curaçao"],
-                ["6", "Sage Rodriguez", "$56,142", "Netherlands"],
-                ["7", "Dakota Rice", "$36,738", "Niger"],
-                ["8", "Minerva Hooper", "$23,789", "Curaçao"],
-                ["9", "Sage Rodriguez", "$56,142", "Netherlands"],
-                ["10", "Dakota Rice", "$36,738", "Niger"],
-                ["11", "Minerva Hooper", "$23,789", "Curaçao"],
-                ["12", "Sage Rodriguez", "$56,142", "Netherlands"],
-                ["13", "Philip Chaney", "$38,735", "Korea, South"]
-              ]}
-            />
-          </CardBody>
+
         </Card>
 
         <Card>
           <CardHeader color="warning">
             <h4 className={classes.cardTitleWhite}>Drivers</h4>
             <p className={classes.cardCategoryWhite}>
-              Here's a list of all washers.
+              Here's a list of all drivers.
             </p>
+            <ReactVirtualizedTable/>
           </CardHeader>
           <CardBody style={{maxHeight: 250, overflow: 'auto'}}>
-            <Table
-              tableHeaderColor="warning"
-              tableHead={["ID", "Name", "Salary", "Country"]}
-              tableData={[
-                ["1", "Dakota Rice", "$36,738", "Niger"],
-                ["2", "Minerva Hooper", "$23,789", "Curaçao"],
-                ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
-                ["4", "Dakota Rice", "$36,738", "Niger"],
-                ["5", "Minerva Hooper", "$23,789", "Curaçao"],
-                ["6", "Sage Rodriguez", "$56,142", "Netherlands"],
-                ["7", "Dakota Rice", "$36,738", "Niger"],
-                ["8", "Minerva Hooper", "$23,789", "Curaçao"],
-                ["9", "Sage Rodriguez", "$56,142", "Netherlands"],
-                ["10", "Dakota Rice", "$36,738", "Niger"],
-                ["11", "Minerva Hooper", "$23,789", "Curaçao"],
-                ["12", "Sage Rodriguez", "$56,142", "Netherlands"],
-                ["13", "Philip Chaney", "$38,735", "Korea, South"]
-              ]}
-            />
           </CardBody>
         </Card>
 
@@ -104,10 +68,12 @@ function UserProfile(props) {
           <CardHeader color="primary">
             <h4 className={classes.cardTitleWhite}>Customers</h4>
             <p className={classes.cardCategoryWhite}>
-              Here's a list of all washers.
+              Here's a list of all customers.
             </p>
+            <ReactVirtualizedTable/>
           </CardHeader>
           <CardBody style={{maxHeight: 250, overflow: 'auto'}}>
+          {/*
             <Table
               tableHeaderColor="warning"
               tableHead={["ID", "Name", "Salary", "Country"]}
@@ -127,6 +93,7 @@ function UserProfile(props) {
                 ["13", "Philip Chaney", "$38,735", "Korea, South"]
               ]}
             />
+            */}
           </CardBody>
         </Card>
         </GridItem>
